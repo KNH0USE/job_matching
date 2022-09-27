@@ -1,0 +1,478 @@
+/* 共通 */
+.common {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #919fd7;
+}
+
+.contents {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* ヘッダー */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+}
+
+.header a {
+  display: block;
+}
+
+.header a img {
+  width: 100%;
+}
+
+.headerSearch {
+  position: relative;
+}
+
+.search {
+  background-color: #fff;
+  text-align: center;
+  width: 400px;
+}
+
+.searchDetail {
+ position: absolute;
+ right: 65px;
+}
+
+.submit {
+  background-color: #ceced7;
+  padding: 0 15px;
+}
+
+.headerLogin a {
+  color: #fff;
+}
+
+/* グローバルナビ */
+.globalNav {
+  background-color: #1b295a;
+  text-align: center;
+}
+
+.globalNav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.globalNav ul li {
+  list-style: none;
+  border-right :1px solid #fff;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.globalNav ul li:last-child {
+  list-style: none;
+  text-align: center;
+  border: none;
+}
+
+.globalNav ul li a {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.globalNav p {
+  text-align: center;
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 10px 0;
+}
+
+/* メニュー */
+.newsInfomation {
+  width: 30%;
+  margin: 20px 20px 0 0;
+}
+
+.notification {
+  padding: 10px;
+  background-color: #fff6ca;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.notification p {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.notification a {
+  margin-left: 10px;
+}
+
+.newsWrapper {
+  padding: 10px;
+  background-color: #fff1ff;
+  margin-bottom: 20px;
+}
+
+.wrap {
+  margin-bottom: 20px;
+}
+
+/* ドロップダウンメニュー */
+.menu_nav nav ul ul{
+  display: block;
+}
+
+nav ul li li a{
+  padding:10px 0;
+}
+
+.has-child {
+    position: relative;
+}
+
+.globalNav ul .menuDrop li {
+    border: none;
+    padding: 10px 0;
+}
+
+
+/*下の階層を持っているulの指定*/
+nav li.has-child ul{
+  position: absolute;
+  top:30px;
+  z-index: 4;
+  background:#35292c;
+  width:100%;
+    /*はじめは非表示*/
+  visibility: hidden;
+  opacity: 0;
+    /*アニメーション設定*/
+  transition: all .3s;
+  display: block;
+}
+
+/*hoverしたら表示*/
+nav li.has-child:hover > ul,
+nav li.has-child ul li:hover > ul,
+nav li.has-child:active > ul,
+nav li.has-child ul li:active > ul{
+  visibility: visible;
+  opacity: 1;
+}
+
+/*ナビゲーションaタグの形状*/
+nav li.has-child ul li a{
+  color: #fff;
+}
+
+nav li.has-child ul li:last-child a{
+  border-bottom:none;
+}
+
+
+
+
+.content.index, .content.view, .content.form {
+  margin: 1rem;
+  h5 {
+    margin: 1rem;
+  }
+}
+
+.flash_message {
+  margin: .5rem 0;
+  color: #ffffff;
+  background-color: #8FBC8F;
+  padding: 0.5rem;
+}
+
+.col-sm-1 {
+  padding-left: 0;
+}
+
+.error-messaage {
+  color: red;
+}
+#textPassword {
+  border: none; /* デフォルトの枠線を消す */
+}
+#fieldPassword {
+  border-width: thin;
+  border-style: solid;
+  width: 200px;
+}
+.test1 {
+  display: none;
+}
+/* 生徒情報 */
+.studentInformation {
+  width: 70%;
+  margin-top: 20px;
+}
+
+.studentContent {
+  display: flex;
+  background-color: #e7f3ff;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.studentImg {
+  padding: 20px;
+  width: 25%;
+}
+
+.studentImg img {
+  width: 100%;
+}
+
+.studentIntroduction {
+  margin-top: 40px;
+}
+
+.name, .profession {
+  font-size: 1.5rem;
+}
+
+.studentFeature {
+  color: #b96565;
+  font-size: 1.25rem;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.studentContent_side {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+.studentContent_side a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.studentContent_side a img {
+  width: 200px;
+}
+
+/* 求人情報追加 */
+form {
+  margin: 30px;
+}
+
+.jobLine {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.jobLine p {
+  margin-right: 20px;
+  font-size: 1.15rem;
+}
+
+.jobLine input, .jobLine textarea {
+  border: 1px solid rgb(126, 126, 126);
+  margin-left: 30px;
+}
+
+.jobLine .file {
+  border: none;
+}
+
+.jobLine input {
+  width: 400px;
+}
+
+.jobLine textarea {
+  width: 400px;
+  height: 150px;
+}
+
+.jobLine span {
+  color: red;
+}
+
+.submit {
+  padding: 5px 15px;
+}
+
+/* 生徒詳細 */
+.studentDetail_taitle {
+  margin: 30px;
+} 
+
+.studentDetail {
+  background-color: #e7f3ff;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto 50px auto;
+}
+
+.studentDtail_introduction {
+  background-color: #fff;
+  padding: 10px;
+  margin: 20px 0;
+  width: 72%;
+}
+
+.career, .qualification, .school {
+  margin-top: 30px;
+}
+
+.career p {
+  margin-top: 10px;
+}
+
+.studentBtn {
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.studentBtn img {
+  margin-right: 50px;
+
+}
+/* 生徒詳細 */
+.studentDetail_taitle {
+margin: 30px;
+}
+
+.studentDetail {
+background-color: #e7f3ff;
+display: flex;
+flex-wrap: wrap;
+width: 90%;
+margin: 0 auto 50px auto;
+}
+
+.studentDtail_introduction {
+background-color: #fff;
+padding: 10px;
+margin: 20px auto 20px;
+width: 72%;
+}
+
+.name {
+font-size: 1.5rem;
+}
+
+.career, .qualification, .school {
+margin-top: 30px;
+}
+
+.career p {
+margin-top: 10px;
+}
+
+.studentBtn {
+margin: 0 auto;
+text-align: center;
+padding: 30px;
+}
+
+.studentBtn img {
+margin-right: 50px;
+width: 30%;
+}
+
+/* フォーム */
+.form-group {
+margin-top: 30px;
+}
+
+.form-group input , .form-group select  {
+// border: 1px solid #333;
+width: 100%;
+padding: 5px;
+margin-top: 10px;
+}
+
+.errors {
+color: red;
+font-weight: bold;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+}
+
+.leftHarf {
+  align-self: start;
+}
+.logo {
+width: 300px;
+height: 300px;
+object-fit: cover;
+border-radius: 50%;
+}
+
+.rightHarf {
+  grid-template-rows: repeat(4,1fr);
+
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content : center;
+  margin: 0 auto;
+}
+li {
+  width: 40%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+a {
+  text-decoration: none;
+}
+
+li:last-child {
+  border-bottom: 2px solid rgb(106, 102, 165);
+}
+
+strong {
+  display: block;
+  width: 90%;
+  margin: 1rem auto 4rem auto;
+  padding: 10px;
+  text-align: left;
+  background-color: #f7f7f7;
+}
+
+table {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+tr {
+  height: 3rem;
+}
+table tr:nth-child(odd) td {
+  background: rgb(233, 233, 233);
+}
+table tr:nth-child(odd) th {
+  background: rgb(210, 214, 255);
+}
+
+.backbtn {
+  display: block;
+  margin-top: 2rem;
+  margin-left: 10%;
+  padding: 5px;
+  width: 10%;
+
+}
